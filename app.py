@@ -1,14 +1,13 @@
-import pandas as pd
-import numpy as np
 import streamlit as st
+from src.extraction import load_data
 
-def load_data():
-    return pd.read_csv('data/bikes_completed.csv')
+sr.set_page_config(layout= 'wide')
 
 def main():
-    df = load_data 
+    df = load_data
 
     st.dataframe(df)
 
-if __name__ =='__main__':
+
+if __name__ == '__main__':
     main()
